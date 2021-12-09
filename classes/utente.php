@@ -21,12 +21,12 @@ class Utente {
 
 
     public function getDataUtente($dataUtente){
-        return "
-                <h2>Name: $dataUtente[name]
-                <h2>Surname: $dataUtente[surname]
-                <h2>Email: $dataUtente[email]
-                <h2>Age: $dataUtente[age]
-                <h2>Payment: $dataUtente[payment]"
+        return "<h1> Utente <h1>
+                <h2>Name: $dataUtente[name]<h2>
+                <h2>Surname: $dataUtente[surname]<h2>
+                <h2>Email: $dataUtente[email]<h2>
+                <h2>Age: $dataUtente[age]<h2>
+                <h2>Payment: $dataUtente[payment]<h2><hr>"
                 ;
     }
 

@@ -15,7 +15,7 @@ $usersData = [
         "age" => 39,
         "email" => "MarcoBenedetti@gmail.com",
         "payment" => " paypal, credit card",
-         "prime" => false 
+         // "prime" => false 
 
       ],
       [
@@ -24,7 +24,7 @@ $usersData = [
         "age" => 42,
         "email" => "LuigiVerdi@gmail.com",
         "payment" => " paypal",
-         "prime" => false
+         // "prime" => false
       ],
       [
         "name" => "Sandra",
