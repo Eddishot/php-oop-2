@@ -1,0 +1,37 @@
+<?php
+
+require_once __DIR__ . "/Utente.php";
+
+trait Bannato {
+
+    public $duration;
+
+    public function setDuration($value){
+        $this->duration = $value;
+    }
+
+    public function getDuration(){
+        return $this->duration;
+    }
+
+}
+
+
+class UtenteBannato extends Utente{
+    use Bannato;
+
+
+    public function __construct($dataUtente)
+        {
+                parent:: __construct($dataUtente)
+            {
+                $this->email = $dataUtente["email"];
+                $this->name = $dataUtente["name"];
+                $this->payment = $dataUtente["payment"];
+                $this -> age = $dataUtente["age"];
+                $this ->surname = $dataUtente["surname"];
+
+            };
+        }
+
+}
